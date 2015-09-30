@@ -509,7 +509,7 @@ image::images/grr-gui-vfs-table-refresh.png[width=850,height=474,align="center"]
 What just happened is that the GUI scheduled a Flow to list the directory.  The
 agent received it and sent back messages with a list of entries. The frontend
 servers picked up the responses and populated the datastore with an object for
-each of them. These objects are AFF4 objects and holdsthe filesystem specific
+each of them. These objects are AFF4 objects and holds the filesystem specific
 attributes that we store (size on disk, dates, permissions) as attributes of
 this object. These AFF4 objects form a hierarchical (tree-like) structure. We
 map the filesystem hierarchy to the AFF4 hierarchy and the GUI simply shows you
